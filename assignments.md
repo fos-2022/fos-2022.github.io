@@ -1,7 +1,7 @@
 ---
 title: Assignments
 layout: default
-start: 19 Sep 2021, 00:00 (Europe/Zurich)
+start: 01 Jan 2022, 00:00 (Europe/Zurich)
 index: 3
 ---
 
@@ -9,35 +9,28 @@ index: 3
 
 Over the course of the semester, we will post five assignments that will require you to code up five moderately complex Scala applications (one per each assignment) that highlight certain theoretical aspects of the course.
 
-Every assignment will become available on this website at due time (usually after the deadline of the previous assignment). We will be notifying you about new assignments through Moodle.
-
-<!--
-We will be notifying you about the arrival of new assignments on the [mailing list](/index.html#mailing-list), so be sure to join it.
--->
+Every assignment will become available on this website at due time (usually after the deadline of the previous assignment).
 
 ### Team Registration
 
-We encourage you to team up when working on assignments. Teams can consist of one, two or three students and should not intersect with each other. It is okay to share ideas between teams, but sharing code is prohibited.
-
-<!-- Please fill in the form below before __September 29, Sunday__:
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfO9b6a5TIFKUNTCFmy5zjYQ-5I8WckXB8KK_vFHps7J4QwNw/viewform?embedded=true" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
+We encourage you to team up when working on assignments.
+Teams can consist of one, two or three students and cannot intersect with each other.
+It is okay to share ideas between teams, but sharing code is prohibited.
 
 ### Getting started with Scala
 
-All development during the course will be done in Scala. Here we provide the instructions
-how to setup the Scala development tools.
+All development during the course will be done in Scala.
+Here we provide the instructions how to setup the Scala development tools.
 
 First, you need to install [the sbt build tool](http://www.scala-sbt.org/download.html).
 See the instructions for installing JVM, Scala and SBT [here](https://gitlab.epfl.ch/lamp/cs206/-/blob/master/labs/tools-setup.md#step-2-installing-the-java-development-kit-jdk-and-sbt-via-coursier).
-You can run `sbt compile` and `sbt run` in the console to compile and run the project.
+For each assignment, you can run `sbt compile` and `sbt run` in the console to compile and run the project.
+Running `sbt` will start an interactive SBT session, after which you can repeatedly compile the project faster compared to running `sbt compile` each time.
 
-We recommend using [VS Code](https://code.visualstudio.com/) with the
-extension [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals)
-for development.
+We recommend using [VS Code](https://code.visualstudio.com/) with the [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals) extension for development.
 You can find instructions for installing VS Code [here](https://gitlab.epfl.ch/lamp/cs206/-/blob/master/labs/tools-setup.md#step-6-installing-code).
-It suffices to install Metals and open the assignment directory in VS Code.
+You will need to make sure you have installed JVM version 11 or 17, after which it suffices to install Metals and open the assignment directory in VS Code.
+VS Code will allow you to use Scala worksheets, which will let you test and interact with your solutions much more easily.
 
 You can also use [IntelliJ IDEA](https://www.jetbrains.com/idea/download) for development.
 You can import the project into the IDE:
@@ -52,10 +45,6 @@ If you don't like IntelliJ IDEA, feel free to use alternative editors or even de
 as long as your project passes our tests.
 
 ### Submitting your solutions
-
-<!--
-1. Register your team, if you haven't done so already. Note that the teams are updated manually, so if you just registered, the bot should be updated the next (more-or-less) morning.
--->
 
 1. Send your project to the grading bot. You can do so by running the `submit.py` script in the project directory, or manually by following the steps you can find a bit below.
 1. Wait for a response from the grading bot. You should receive _two_
@@ -80,16 +69,15 @@ load it could take longer.
   * The body of the email doesn't matter, because our grading bot can't read.
   * Don't forget the attachment.
 
-
 ### Late submissions
 
 If you miss a deadline, you can still submit your project, however your grade will be reduced. Late submissions will be graded with 30% deduction of points for every day after the deadline.
 
-### Feedback on submissions
+<!-- ### Feedback on submissions -->
 
-If you need more detailed feedback on your submission, please send an email to
-one of the assistants to reserve an office slot, so that we may study your code
-together.
+<!-- If you need more detailed feedback on your submission, please send an email to -->
+<!-- one of the assistants to reserve an office slot, so that we may study your code -->
+<!-- together. -->
 
 ### FAQ
 

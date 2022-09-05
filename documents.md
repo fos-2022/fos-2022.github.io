@@ -1,7 +1,7 @@
 ---
 title: Documents
 layout: default
-start: 19 Sep 2021, 00:00 (Europe/Zurich)
+start: 01 Jan 2022, 00:00 (Europe/Zurich)
 index: 2
 ---
 
@@ -169,6 +169,7 @@ directory.
 -->
 
 <!--
+-->
 ### Foundations of Scala
 
 Download for [screen](slides/week14.pdf).
@@ -198,4 +199,5 @@ Download [solutions](slides/penpaper-final-2-sol.pdf).
 
 Download [exercises](slides/penpaper-final-1.pdf).
 Download [solutions](slides/penpaper-final-1-sol.pdf).
+<!--
 -->

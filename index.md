@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-start: 19 Sep 2021, 00:00 (Europe/Zurich)
+start: 01 Jan 2022, 00:00 (Europe/Zurich)
 index: -1
 ---
 
@@ -11,27 +11,15 @@ Software foundations (or *theory of programming languages*) is the mathematical 
 
 ### Announcements
 
-Announcements about the course will be made through Moodle: https://moodle.epfl.ch/course/view.php?id=8061 .
-
-<!--
-### Mailing list
-
-You *must join* the [course mailing list](https://groups.google.com/u/0/g/fos2021) if you're attending the course. Additional announcements related to the
-course, as well as answers to the students' questions will be posted there -
-remember to check it frequently! You can also use the list to ask any questions
-you might have.
-
-The mailing list is only available to registered members. In order to join the
-mailing list, open the google group and click 'Apply for membership'.
--->
+Announcements about the course will be made through [Moodle](https://moodle.epfl.ch/course/view.php?id=8061).
 
 ### Team Registration
 
 We encourage you to team up when working on assignments. Teams can consist of one, two or three students and should not intersect with each other. It is okay to share ideas between teams, but sharing code is prohibited.
 
-Please fill in the form below before __TODO__:
+Please fill in the form below before __12 Oct, inclusive__:
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEGdAPPYY3j5oOxiA9mRX9Lxd0Ckz4bKMrIOuwF9cqQ-VNOA/viewform?embedded=true" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEGdAPPYY3j5oOxiA9mRX9Lxd0Ckz4bKMrIOuwF9cqQ-VNOA/viewform?embedded=true" width="640" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ### Schedule
 
@@ -40,38 +28,38 @@ Exercise sessions take place on *Wed 11:15-13:00, INJ 218*.
 
 The schedule below is, to a small extent, still provisional.
 
-|-----------|-------------|-----------------------------------------------------------------------------|
-| 38th week | Tue, 21 Sep | Lecture on *Introduction and Combinator Parsers*                            |
-|           | Wed, 22 Sep | Exercise session on *arithmetic expressions*                                |
-| 39th week | Tue, 28 Sep | Lecture on *Arithmetic Expressions - Abstract Syntax and Proof Principles*  |
-|           | Wed, 29 Sep | Exercise session on *arithmetic expressions*                                |
-| 40th week | Tue, 5  Sep | Lecture on *The Untyped Lambda Calculus (1)*                                |
-|           | Wed, 6  Sep | Exercise session on *untyped lambda calculus*                               |
-| 41st week | Tue, 12 Oct | Lecture on *The Untyped Lambda Calculus (2)*                                |
-|           | Wed, 13 Oct | Exercise session on *untyped lambda calculus*                               |
-| 42nd week | Tue, 19 Oct | Lecture on *The Simply Typed Lambda Calculus*                               |
-|           | Wed, 20 Oct | Exercise session on *simply typed lambda calculus*                          |
-| 43rd week | Tue, 26 Oct | Lecture on *STLC & Simple Extensions to STLC*                               |
-|           | Wed, 27 Oct | Exercise session on *simply typed lambda calculus*                          |
-| 44th week | Tue, 2 Nov  | Lecture on *More Extensions to STLC*                                        |
-|           | Wed, 3 Nov  | Pen & paper exercise session #1                                             |
-| 45th week | Tue, 9 Nov  | Lecture on *Recursion and State with STLC*                                  |
-|           | Wed, 10 Nov | Exercise session on *simply typed lambda calculus with extensinos*          |
-| 46th week | Tue, 16 Nov | Lecture on *Type Reconstruction and Polymorphism*                           |
-|           | Wed, 17 Nov | Pen & paper exercise session #2                                             |
-| 47th week | Tue, 23 Nov | Lecture on *Subtyping*                                                      |
-|           | Wed, 24 Nov | Exercise session on *simply typed lambda calculus with Type Reconstruction* |
-| 48th week | Tue, 30 Nov | Lecture on *Dependent types*                                                |
-|           | Wed, 1 Dec  | Coq workshop                                                                |
-| 49th week | Tue, 7 Dec  | Lecture on *Objects*                                                        |
-|           | Wed, 8 Dec  | Exercise session on *simply typed lambda calculus with Type Reconstruction* |
-| 50th week | Tue, 14 Dec | Lecture on *Featherweight Java*                                             |
-|           | Wed, 15 Dec | Pen & paper exercise session #3                                             |
-| 51st week | Tue, 21 Dec | Lecture on *Foundations of Scala*                                           |
-|           | Wed, 22 Dec | Pen & paper exercise session #4                                             |
-|           | Thu, Jan 27 | Final exam (8:15 - 11:15)                                                    |
+|-------------|-----------------------------------------------------------------------------|
+| Tue, 20 Sep | Lecture on *Introduction and Combinator Parsers* |
+| Wed, 21 Sep | Exercise session on Project 1 |
+| Tue, 27 Sep | Lecture on *Arithmetic Expressions - Abstract Syntax and Proof Principles* |
+| Wed, 28 Sep | Exercise session on Project 1 |
+| Tue, 4 Oct | Lecture on *The Untyped Lambda Calculus (1)* |
+| Wed, 5 Oct | Pen-and-paper exercise session #1 |
+| Tue, 11 Oct | Lecture on *The Untyped Lambda Calculus (2)* |
+| Wed, 12 Oct | Exercise session on Project 1 and 2 |
+| Tue, 18 Oct | Lecture on *The Simply Typed Lambda Calculus* |
+| Wed, 19 Oct | Pen-and-paper exercise session #2 |
+| Tue, 25 Oct | Lecture on *STLC & Simple Extensions to STLC* |
+| Wed, 26 Oct | Exercise session on Projects 2 and 3 |
+| Tue, 1 Nov | Lecture on *More Extensions to STLC* |
+| Wed, 2 Nov | TBA |
+| Tue, 8 Nov | Lecture on *Recursion and State with STLC* |
+| Wed, 9 Nov | Exercise session on Project 3 |
+| Tue, 15 Nov | Lecture on *Type Reconstruction and Polymorphism* |
+| Wed, 16 Nov | Exercise session on Project 4 |
+| Tue, 22 Nov | Lecture on *Subtyping* |
+| Wed, 23 Nov | Pen-and-paper exercise session #3 |
+| Tue, 29 Nov | Lecture on *Dependent types* |
+| Wed, 30 Nov | Coq workshop |
+| Tue, 6 Dec | Lecture on *Objects* |
+| Wed, 7 Dec | Exercise session on Project 4 and 5 |
+| Tue, 13 Dec | Lecture on *Featherweight Java* |
+| Wed, 14 Dec | Pen-and-paper exercise session #4 |
+| Tue, 20 Dec | Lecture on *Foundations of Scala* |
+| Wed, 21 Dec | Exercise session on Project 5 |
 
-Lecture notes and pen & paper session exercises are available in [documents section](/documents.html).
+
+Lecture notes and pen-and-paper session exercises are available in [documents section](/documents.html).
 
 ### Grading
 
