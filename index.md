@@ -33,26 +33,26 @@ The schedule below is, to a small extent, still provisional.
 | Wed, 21 Sep | Exercise session on Project 1 |
 | Tue, 27 Sep | Lecture on *Arithmetic Expressions - Abstract Syntax and Proof Principles* |
 | Wed, 28 Sep | Exercise session on Project 1 |
-| Tue, 4 Oct | Lecture on *The Untyped Lambda Calculus (1)* |
-| Wed, 5 Oct | Pen-and-paper exercise session #1 |
+| Tue, 04 Oct | Lecture on *The Untyped Lambda Calculus (1)* |
+| Wed, 05 Oct | Pen-and-paper exercise session #1 |
 | Tue, 11 Oct | Lecture on *The Untyped Lambda Calculus (2)* |
 | Wed, 12 Oct | Exercise session on Project 1 and 2 |
 | Tue, 18 Oct | Lecture on *The Simply Typed Lambda Calculus* |
 | Wed, 19 Oct | Pen-and-paper exercise session #2 |
 | Tue, 25 Oct | Lecture on *STLC & Simple Extensions to STLC* |
 | Wed, 26 Oct | Exercise session on Projects 2 and 3 |
-| Tue, 1 Nov | Lecture on *More Extensions to STLC* |
-| Wed, 2 Nov | TBA |
-| Tue, 8 Nov | Lecture on *Recursion and State with STLC* |
-| Wed, 9 Nov | Exercise session on Project 3 |
+| Tue, 01 Nov | Lecture on *More Extensions to STLC* |
+| Wed, 02 Nov | TBA |
+| Tue, 08 Nov | Lecture on *Recursion and State with STLC* |
+| Wed, 09 Nov | Exercise session on Project 3 |
 | Tue, 15 Nov | Lecture on *Type Reconstruction and Polymorphism* |
 | Wed, 16 Nov | Exercise session on Project 4 |
 | Tue, 22 Nov | Lecture on *Subtyping* |
 | Wed, 23 Nov | Pen-and-paper exercise session #3 |
 | Tue, 29 Nov | Lecture on *Dependent types* |
 | Wed, 30 Nov | Coq workshop |
-| Tue, 6 Dec | Lecture on *Objects* |
-| Wed, 7 Dec | Exercise session on Project 4 and 5 |
+| Tue, 06 Dec | Lecture on *Objects* |
+| Wed, 07 Dec | Exercise session on Project 4 and 5 |
 | Tue, 13 Dec | Lecture on *Featherweight Java* |
 | Wed, 14 Dec | Pen-and-paper exercise session #4 |
 | Tue, 20 Dec | Lecture on *Foundations of Scala* |

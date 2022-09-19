@@ -5,7 +5,7 @@ start: 01 Jan 2022, 00:00 (Europe/Zurich)
 index: 0
 ---
 
-### Professor
+### Lecturer
 
 Sébastien Doeraene<br/>
 <br/>
