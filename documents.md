@@ -169,7 +169,6 @@ directory.
 -->
 
 <!--
--->
 ### Foundations of Scala
 
 Download for [screen](slides/week14.pdf).
@@ -199,5 +198,4 @@ Download [solutions](slides/penpaper-final-2-sol.pdf).
 
 Download [exercises](slides/penpaper-final-1.pdf).
 Download [solutions](slides/penpaper-final-1-sol.pdf).
-<!--
 -->
