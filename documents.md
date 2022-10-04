@@ -176,12 +176,16 @@ Download for [screen](slides/week14.pdf).
 ### Foundations of Scala (contd.)
 
 Download for [screen](slides/week14.pdf).
+-->
 
 ## Pen & Paper
 
 ### Pen & Paper #1
 
 Download [exercises](slides/penpaper-midterm2016-1.pdf).
+
+<!--
+
 Download [solutions](slides/penpaper-midterm-1-sol.pdf).
 
 ### Pen & Paper #2
