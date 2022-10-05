@@ -183,11 +183,9 @@ Download for [screen](slides/week14.pdf).
 ### Pen & Paper #1
 
 Download [exercises](slides/penpaper-midterm2016-1.pdf).
-
-<!--
-
 Download [solutions](slides/penpaper-midterm-1-sol.pdf).
 
+<!--
 ### Pen & Paper #2
 
 Download [exercises](slides/penpaper-midterm2021-2.pdf).
