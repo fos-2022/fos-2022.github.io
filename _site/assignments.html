@@ -63,8 +63,8 @@ Here we provide the instructions how to setup the Scala development tools.</p>
 
 <p>First, you need to install <a href="http://www.scala-sbt.org/download.html">the sbt build tool</a>.
 See the instructions for installing JVM, Scala and SBT <a href="https://gitlab.epfl.ch/lamp/cs206/-/blob/master/labs/tools-setup.md#step-2-installing-the-java-development-kit-jdk-and-sbt-via-coursier">here</a>.
-For each assignment, you can run <code class="language-plaintext highlighter-rouge">sbt compile</code> and <code class="language-plaintext highlighter-rouge">sbt run</code> in the console to compile and run the project.
-Running <code class="language-plaintext highlighter-rouge">sbt</code> will start an interactive SBT session, after which you can repeatedly compile the project faster compared to running <code class="language-plaintext highlighter-rouge">sbt compile</code> each time.</p>
+For each assignment, you can run <code class="highlighter-rouge">sbt compile</code> and <code class="highlighter-rouge">sbt run</code> in the console to compile and run the project.
+Running <code class="highlighter-rouge">sbt</code> will start an interactive SBT session, after which you can repeatedly compile the project faster compared to running <code class="highlighter-rouge">sbt compile</code> each time.</p>
 
 <p>We recommend using <a href="https://code.visualstudio.com/">VS Code</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=scalameta.metals">Metals</a> extension for development.
 You can find instructions for installing VS Code <a href="https://gitlab.epfl.ch/lamp/cs206/-/blob/master/labs/tools-setup.md#step-6-installing-code">here</a>.
@@ -75,11 +75,11 @@ VS Code will allow you to use Scala worksheets, which will let you test and inte
 You can import the project into the IDE:</p>
 
 <ol>
-  <li>Click <code class="language-plaintext highlighter-rouge">Import Project</code>.</li>
+  <li>Click <code class="highlighter-rouge">Import Project</code>.</li>
   <li>Select the directory where you unpacked the assignment.</li>
-  <li>Click <code class="language-plaintext highlighter-rouge">Open</code>.</li>
-  <li>Select <code class="language-plaintext highlighter-rouge">Import project from external model &gt; SBT</code>, click <code class="language-plaintext highlighter-rouge">Next</code>.</li>
-  <li>Click <code class="language-plaintext highlighter-rouge">Finish</code>.</li>
+  <li>Click <code class="highlighter-rouge">Open</code>.</li>
+  <li>Select <code class="highlighter-rouge">Import project from external model &gt; SBT</code>, click <code class="highlighter-rouge">Next</code>.</li>
+  <li>Click <code class="highlighter-rouge">Finish</code>.</li>
 </ol>
 
 <p>If you don’t like IntelliJ IDEA, feel free to use alternative editors or even develop in the console,
@@ -88,7 +88,7 @@ as long as your project passes our tests.</p>
 <h3 id="submitting-your-solutions">Submitting your solutions</h3>
 
 <ol>
-  <li>Send your project to the grading bot. You can do so by running the <code class="language-plaintext highlighter-rouge">submit.py</code> script in the project directory, or manually by following the steps you can find a bit below.</li>
+  <li>Send your project to the grading bot. You can do so by running the <code class="highlighter-rouge">submit.py</code> script in the project directory, or manually by following the steps you can find a bit below.</li>
   <li>
     <p>Wait for a response from the grading bot. You should receive <em>two</em>
 responses - first one indicates that your email has reached the bot’s inbox and
@@ -107,10 +107,10 @@ load it could take longer.</p>
 <h4 id="submitting-manually">Submitting manually</h4>
 
 <ol>
-  <li>Zip the <code class="language-plaintext highlighter-rouge">src</code> directory, making sure that:
+  <li>Zip the <code class="highlighter-rouge">src</code> directory, making sure that:
     <ul>
       <li>you haven’t created or removed any files from the provided template for the corresponding project. For instance, if the template contained files Arithmetic.scala and Terms.scala in /src/main/scala/fos, don’t move these files around or create additional helper files.</li>
-      <li>you don’t zip any other directory, in particular the <code class="language-plaintext highlighter-rouge">target</code> directory, which contains binary files that might trip Google’s anti-virus.</li>
+      <li>you don’t zip any other directory, in particular the <code class="highlighter-rouge">target</code> directory, which contains binary files that might trip Google’s anti-virus.</li>
     </ul>
   </li>
   <li>Send the archive produced during the previous step to grading bot’s email address: <a href="mailto:lamp.fos.bot@gmail.com">lamp.fos.bot@gmail.com</a>
