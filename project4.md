@@ -11,10 +11,10 @@ index: 7
 
 **Project template:** [4-extensions.zip](projects/4-extensions.zip)
 
-The project skeleton is the same one you started with for the last assignment. You should continue working on
-your project, and the final submission should contain all extensions, both from this assignment
-and from the last assignment. In this assignment, you will extend your simply typed lambda
-calculus project from exercise 3 with several features.
+The project skeleton is very similar to the one from the last assignment.
+You should download the template and copy your definitions from the previous project.
+The final submission should contain all extensions, both from this assignment and from the last assignment.
+In this assignment, you will extend your simply typed lambda calculus project from project 3 with several features.
 
 There is a common base that everyone must implement:
 
