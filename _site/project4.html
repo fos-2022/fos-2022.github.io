@@ -332,6 +332,10 @@ Despite the similarity of the surface syntax, it is truly a different, distinct 
     | "case" t "of" "nil" "=&gt;" t "|" "cons" x y "=&gt;" t    list case
 </code></pre></div></div>
 
+<p>We use <code class="highlighter-rouge">{ ... }</code> to denote repetition (0 to many times).
+The last comma is required to simplify the notation of the term syntax here.
+You must at least parse variants with the last comma; you are free to <em>also</em> parse variants without that comma if you want.</p>
+
 <p>Types:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>T ::= ...
@@ -430,7 +434,8 @@ We can instead use ascription to force the two sides of an if-then-else to have 
 </code></pre></div></div>
 
 <p>We use <code class="highlighter-rouge">{ ... }</code> to denote repetition (0 to many times).
-The last comma is required to simplify the parser.</p>
+The last comma is required to simplify the notation of the term syntax here.
+You must at least parse variants with the last comma; you are free to <em>also</em> parse variants without that comma if you want.</p>
 
 <p>Types:</p>
 

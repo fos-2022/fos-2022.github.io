@@ -266,6 +266,10 @@ Terms:
         | "cons "[" T "]" t t                                 list constructor
         | "case" t "of" "nil" "=>" t "|" "cons" x y "=>" t    list case
 
+We use `{ ... }` to denote repetition (0 to many times).
+The last comma is required to simplify the notation of the term syntax here.
+You must at least parse variants with the last comma; you are free to *also* parse variants without that comma if you want.
+
 Types:
 
     T ::= ...
@@ -358,7 +362,8 @@ Terms:
         | t "as" T                      ascription
 
 We use `{ ... }` to denote repetition (0 to many times).
-The last comma is required to simplify the parser.
+The last comma is required to simplify the notation of the term syntax here.
+You must at least parse variants with the last comma; you are free to *also* parse variants without that comma if you want.
 
 Types:
 
