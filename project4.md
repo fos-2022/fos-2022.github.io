@@ -306,6 +306,14 @@ Evaluation rules:
     ----------------------------------
     cons [T] v1 t2  →  cons [T] v1 t2'
 
+                                      t1   →   t1'
+    --------------------------------------------------------------------------------
+    case t1 of nil => t2 | cons x y => t3  →  case t1' of nil => t2 | cons x y => t3
+
+    case nil of nil => t2 | cons x y => t3  →  t2
+
+    case (const v0 v1) of nil => t2 | cons x y => t3  →  [x → v0] [y → v1] t3
+
 Typing rules:
 
       Γ, X ⊢ t2 : T2

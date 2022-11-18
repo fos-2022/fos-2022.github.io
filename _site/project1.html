@@ -43,6 +43,8 @@
           
         
           
+            <p><a href="project4.html">Project 4 - STLC Extensions</a></p>
+          
         
           
         
@@ -59,7 +61,7 @@
 <p>The cryptic acronym stands for Numbers and Booleans and comes from the course book.
 This simple language is defined in Chapter 3 of the the TAPL book.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>t  ::= "true"                   terms
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>t  ::= "true"                   terms
      | "false"
      | "if" t "then" t "else" t
      | numericLiteral
@@ -78,15 +80,15 @@ nv ::= 0                        numeric values
 <p>This language has three syntactic forms: terms, which is the most general form, and two
 kinds of values: numeric values, and boolean values. We have extended the syntax by
 allowing numeric literals. They are syntactic sugar and have to be transformed during
-parsing to their equivalent value <code class="language-plaintext highlighter-rouge">succ succ .. 0</code>. The language is completely defined by
-the production <code class="language-plaintext highlighter-rouge">t</code>, for terms. Values are a subset of terms, and for simplicity they are
+parsing to their equivalent value <code class="highlighter-rouge">succ succ .. 0</code>. The language is completely defined by
+the production <code class="highlighter-rouge">t</code>, for terms. Values are a subset of terms, and for simplicity they are
 defined using a BNF notation, but they need not be parsed as such.</p>
 
 <h2 id="small-step-semantics">Small step semantics</h2>
 
 <p>The evaluation rules are as follows.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         if true then t1 else t2 → t1
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         if true then t1 else t2 → t1
 
          if false then t1 else t2 → t2
 
@@ -122,7 +124,7 @@ Instead of defining evaluation in terms of a single step reduction, it formulate
 notion of a term that evaluates to a final value, written “t ⇓ v”. Here is how the big
 step evaluation rules would look for this language:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>           v ⇓ v            (B-VALUE)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>           v ⇓ v            (B-VALUE)
 
   t1 ⇓ true     t2 ⇓ v2
 ——————————————————————————  (B-IFTRUE)
@@ -157,41 +159,41 @@ if t1 then t2 else t3 ⇓ v3
 
 <ol>
   <li>
-    <p>Implement <code class="language-plaintext highlighter-rouge">term</code> parser that recognizes this language, using the combinator library.
-The parser must produce abstract syntax trees defined in <code class="language-plaintext highlighter-rouge">Terms.scala</code>.</p>
+    <p>Implement <code class="highlighter-rouge">term</code> parser that recognizes this language, using the combinator library.
+The parser must produce abstract syntax trees defined in <code class="highlighter-rouge">Terms.scala</code>.</p>
   </li>
   <li>
-    <p>Implement <code class="language-plaintext highlighter-rouge">reduce</code> method which performs one step of the evaluation, according to the rules
-of the small step semantics. If none of the rules apply it should throw <code class="language-plaintext highlighter-rouge">NoReductionPossible</code>
+    <p>Implement <code class="highlighter-rouge">reduce</code> method which performs one step of the evaluation, according to the rules
+of the small step semantics. If none of the rules apply it should throw <code class="highlighter-rouge">NoReductionPossible</code>
 exception containing corresponding irreducible term.</p>
   </li>
   <li>
-    <p>Implement <code class="language-plaintext highlighter-rouge">eval</code> method which implements a big step evaluator (one which evaluates a term
+    <p>Implement <code class="highlighter-rouge">eval</code> method which implements a big step evaluator (one which evaluates a term
 down to a value, or it gets stuck when no rule applies). This method should implement
 the big step semantics defined above, and not call reduce. If evaluation is not possible
-it should throw <code class="language-plaintext highlighter-rouge">TermIsStuck</code> exception containing corresponding stuck term.</p>
+it should throw <code class="highlighter-rouge">TermIsStuck</code> exception containing corresponding stuck term.</p>
   </li>
 </ol>
 
-<p>All of these are given with stubbed <code class="language-plaintext highlighter-rouge">???</code> body. <code class="language-plaintext highlighter-rouge">???</code> is used to indicated unimplemented
+<p>All of these are given with stubbed <code class="highlighter-rouge">???</code> body. <code class="highlighter-rouge">???</code> is used to indicated unimplemented
 parts of code in Scala.</p>
 
 <h2 id="development--debugging">Development &amp; debugging</h2>
 
 <p>We provide a simple runnner for your application that lets you quickly debug your current
-implementation. When you implement <code class="language-plaintext highlighter-rouge">term</code>, <code class="language-plaintext highlighter-rouge">reduce</code> and <code class="language-plaintext highlighter-rouge">eval</code> implementations it should
+implementation. When you implement <code class="highlighter-rouge">term</code>, <code class="highlighter-rouge">reduce</code> and <code class="highlighter-rouge">eval</code> implementations it should
 produce results like:</p>
 
 <p><strong>Example 1</strong>:</p>
 
 <p>input:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if iszero pred pred 2 then if iszero 0 then true else false else false
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if iszero pred pred 2 then if iszero 0 then true else false else false
 </code></pre></div></div>
 
 <p>output:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If(IsZero(Pred(Pred(Succ(Succ(Zero))))),If(IsZero(Zero),True,False),False)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If(IsZero(Pred(Pred(Succ(Succ(Zero))))),If(IsZero(Zero),True,False),False)
 If(IsZero(Pred(Succ(Zero))),If(IsZero(Zero),True,False),False)
 If(IsZero(Zero),If(IsZero(Zero),True,False),False)
 If(True,If(IsZero(Zero),True,False),False)
@@ -205,12 +207,12 @@ Big step: True
 
 <p>input:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pred succ succ succ false
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pred succ succ succ false
 </code></pre></div></div>
 
 <p>output:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pred(Succ(Succ(Succ(False))))
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pred(Succ(Succ(Succ(False))))
 Big step: Stuck term: Succ(False)
 </code></pre></div></div>
 
