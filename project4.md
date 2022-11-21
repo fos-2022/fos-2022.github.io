@@ -427,6 +427,10 @@ Typing rules:
     -------------------------------------
               Γ ⊢ t1.li : Ti
 
+    Γ ⊢ t1 : T1     T1 <: T
+    -----------------------
+        Γ ⊢ t1 as T : T
+
 ## What you need to do
 
 1. Choose (at least) one bundle to implement. Add to it the sum types and the `fix` operator.
