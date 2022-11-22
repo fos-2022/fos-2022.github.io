@@ -195,12 +195,12 @@ Download [solutions](slides/penpaper-midterm2021-3-sol.pdf).
 Download [exercises](slides/penpaper-exercises-2022-3.pdf).
 Download [solutions](slides/penpaper-exercises-2022-3-sol.pdf).
 
-<!--
-Download [solutions](slides/penpaper-final-2-sol.pdf).
 
 ### Pen & Paper #4
 
-Download [exercises](slides/penpaper-final-1.pdf).
+Download [exercises](slides/penpaper-final2022-1.pdf).
+
+<!--
 Download [solutions](slides/penpaper-final-1-sol.pdf).
 -->
 

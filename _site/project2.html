@@ -58,7 +58,7 @@
 
 <p>In this exercise, you’ll be studying untyped λ-calculus. This classic language is defined in Chapter 5 of the TAPL book.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>t ::= ident              terms
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>t ::= ident              terms
     | "\" ident "." t
     | t t
     | "(" t ")"
@@ -66,13 +66,13 @@
 v ::= "\" ident "." t    values
 </code></pre></div></div>
 
-<p>We use standard syntax to express λ-terms, with lambdas replaced by backslashes. As a reminder, note that the bodies of abstractions are taken to extend as far to the right as possible, so that, for example, <code class="highlighter-rouge">λx. λy. x y x</code> stands for the same tree as <code class="highlighter-rouge">λx. (λy. ((x y) x))</code> (see TAPL, p54).</p>
+<p>We use standard syntax to express λ-terms, with lambdas replaced by backslashes. As a reminder, note that the bodies of abstractions are taken to extend as far to the right as possible, so that, for example, <code class="language-plaintext highlighter-rouge">λx. λy. x y x</code> stands for the same tree as <code class="language-plaintext highlighter-rouge">λx. (λy. ((x y) x))</code> (see TAPL, p54).</p>
 
 <h2 id="evaluation-rules">Evaluation rules</h2>
 
 <p>The evaluation rules for full beta-reduction are as follows.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   t1 → t1'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   t1 → t1'
 --------------
 t1 t2 → t1' t2
 
@@ -99,34 +99,34 @@ t1 t2 → t1 t2'
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">[x → s] x</code></td>
-      <td><code class="highlighter-rouge">s</code></td>
+      <td><code class="language-plaintext highlighter-rouge">[x → s] x</code></td>
+      <td><code class="language-plaintext highlighter-rouge">s</code></td>
       <td> </td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">[x → s] y</code></td>
-      <td><code class="highlighter-rouge">y</code></td>
-      <td>if <code class="highlighter-rouge">y ≠ x</code></td>
+      <td><code class="language-plaintext highlighter-rouge">[x → s] y</code></td>
+      <td><code class="language-plaintext highlighter-rouge">y</code></td>
+      <td>if <code class="language-plaintext highlighter-rouge">y ≠ x</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">[x → s] (λy. t1)</code></td>
-      <td><code class="highlighter-rouge">λy . t1</code></td>
-      <td>if <code class="highlighter-rouge">y = x</code></td>
+      <td><code class="language-plaintext highlighter-rouge">[x → s] (λy. t1)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">λy . t1</code></td>
+      <td>if <code class="language-plaintext highlighter-rouge">y = x</code></td>
     </tr>
     <tr>
       <td> </td>
-      <td><code class="highlighter-rouge">λy . [x → s] t1</code></td>
-      <td>if <code class="highlighter-rouge">y ≠ x</code> and <code class="highlighter-rouge">y ∉ FV(s)</code> <strong><span style="color:red">(*)</span></strong></td>
+      <td><code class="language-plaintext highlighter-rouge">λy . [x → s] t1</code></td>
+      <td>if <code class="language-plaintext highlighter-rouge">y ≠ x</code> and <code class="language-plaintext highlighter-rouge">y ∉ FV(s)</code> <strong><span style="color:red">(*)</span></strong></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">[x → s] (t1 t2)</code></td>
-      <td><code class="highlighter-rouge">([x → s] t1 [x → s] t2)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">[x → s] (t1 t2)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">([x → s] t1 [x → s] t2)</code></td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
-<p>The part marked with an <strong><span style="color:red">(*)</span></strong> doesn’t handle the case where <code class="highlighter-rouge">y ∈ FV(s)</code>. So what shall we do then? We first use of alpha-conversion for consistently renaming a bound variable in a term - actually a lambda abstraction - and then continue to apply the substitution rules. To rename a bound variable in a lambda abstraction <code class="highlighter-rouge">λx. t1</code>, one chooses a fresh name <code class="highlighter-rouge">x1</code> for bound variable <code class="highlighter-rouge">x</code>, and consistently renames all free occurrences of <code class="highlighter-rouge">x</code> in the body <code class="highlighter-rouge">t1</code>. Note: you will need to define a function that “freshens” variable names. You can rely on variable names in the input term containing only characters, never any numbers.</p>
+<p>The part marked with an <strong><span style="color:red">(*)</span></strong> doesn’t handle the case where <code class="language-plaintext highlighter-rouge">y ∈ FV(s)</code>. So what shall we do then? We first use of alpha-conversion for consistently renaming a bound variable in a term - actually a lambda abstraction - and then continue to apply the substitution rules. To rename a bound variable in a lambda abstraction <code class="language-plaintext highlighter-rouge">λx. t1</code>, one chooses a fresh name <code class="language-plaintext highlighter-rouge">x1</code> for bound variable <code class="language-plaintext highlighter-rouge">x</code>, and consistently renames all free occurrences of <code class="language-plaintext highlighter-rouge">x</code> in the body <code class="language-plaintext highlighter-rouge">t1</code>. Note: you will need to define a function that “freshens” variable names. You can rely on variable names in the input term containing only characters, never any numbers.</p>
 
 <p>We use the following rules to test if a variable is free in some term:</p>
 
@@ -139,16 +139,16 @@ t1 t2 → t1 t2'
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">FV(x)</code></td>
-      <td><code class="highlighter-rouge">{x}</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FV(x)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">{x}</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">FV(λx. t1)</code></td>
-      <td><code class="highlighter-rouge">FV(t1) \ {x}</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FV(λx. t1)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FV(t1) \ {x}</code></td>
     </tr>
     <tr>
-      <td><code class="highlighter-rouge">FV(t1 t2)</code></td>
-      <td><code class="highlighter-rouge">FV(t1) ∪ FV(t2)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FV(t1 t2)</code></td>
+      <td><code class="language-plaintext highlighter-rouge">FV(t1) ∪ FV(t2)</code></td>
     </tr>
   </tbody>
 </table>
@@ -180,15 +180,15 @@ t1 t2 → t1 t2'
 
 <ol>
   <li>
-    <p>Implement <code class="highlighter-rouge">term</code> parser that recognizes this language, using the combinator library. The parser must produce abstract syntax trees defined in <code class="highlighter-rouge">Terms.scala</code>.</p>
+    <p>Implement <code class="language-plaintext highlighter-rouge">term</code> parser that recognizes this language, using the combinator library. The parser must produce abstract syntax trees defined in <code class="language-plaintext highlighter-rouge">Terms.scala</code>.</p>
 
-    <p>Here are some implementation hints: a) Use the built-in <code class="highlighter-rouge">ident</code> combinator to parse identifiers. b) Provided grammar for untyped λ-calculus is left-recursive, so you’ll be getting stack overflow errors if you implement it naively. Consult week 1 lectures to see how to address this problem.</p>
+    <p>Here are some implementation hints: a) Use the built-in <code class="language-plaintext highlighter-rouge">ident</code> combinator to parse identifiers. b) Provided grammar for untyped λ-calculus is left-recursive, so you’ll be getting stack overflow errors if you implement it naively. Consult week 1 lectures to see how to address this problem.</p>
   </li>
   <li>
-    <p>Implement <code class="highlighter-rouge">reduceNormalOrder</code> method that uses the normal-order strategy, which applies alpha-conversion and term substitution following the above reduction rules. If none of the rules apply it should throw <code class="highlighter-rouge">NoReductionPossible</code> exception containing corresponding irreducible term.</p>
+    <p>Implement <code class="language-plaintext highlighter-rouge">reduceNormalOrder</code> method that uses the normal-order strategy, which applies alpha-conversion and term substitution following the above reduction rules. If none of the rules apply it should throw <code class="language-plaintext highlighter-rouge">NoReductionPossible</code> exception containing corresponding irreducible term.</p>
   </li>
   <li>
-    <p>Implement <code class="highlighter-rouge">reduceCallByValue</code> method that uses the call-by-value evaluation strategy. For that you need to define a new set of evaluation rules, similar to the ones given above. Again, if none of the rules apply it should throw <code class="highlighter-rouge">NoReductionPossible</code> exception containing corresponding irreducible term.</p>
+    <p>Implement <code class="language-plaintext highlighter-rouge">reduceCallByValue</code> method that uses the call-by-value evaluation strategy. For that you need to define a new set of evaluation rules, similar to the ones given above. Again, if none of the rules apply it should throw <code class="language-plaintext highlighter-rouge">NoReductionPossible</code> exception containing corresponding irreducible term.</p>
 
     <p>Since we speak about values, we need to define what a value is. We will follow the book in saying that the only values are lambda abstractions. Does it simplify the substitution operation? What would happen if we add variables to the set of values (do not implement, these are self-check questions)? Compare the output of the two reducers, and try to understand why it is different.</p>
   </li>
@@ -196,16 +196,16 @@ t1 t2 → t1 t2'
 
 <h2 id="development--debugging">Development &amp; debugging</h2>
 
-<p>We provide a simple runnner for your application that lets you quickly debug your current implementation. When you implement <code class="highlighter-rouge">term</code>, <code class="highlighter-rouge">reduceNormalOrder</code> and <code class="highlighter-rouge">reduceCallByValue</code> implementations it should produce results like:</p>
+<p>We provide a simple runnner for your application that lets you quickly debug your current implementation. When you implement <code class="language-plaintext highlighter-rouge">term</code>, <code class="language-plaintext highlighter-rouge">reduceNormalOrder</code> and <code class="language-plaintext highlighter-rouge">reduceCallByValue</code> implementations it should produce results like:</p>
 
 <p>input:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\y. ((\x. x) y)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\y. ((\x. x) y)
 </code></pre></div></div>
 
 <p>output:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>normal order:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>normal order:
 Abs(y,App(Abs(x,Var(x)),Var(y)))
 Abs(y,Var(y))
 call-by-value:
