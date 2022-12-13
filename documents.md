@@ -161,6 +161,17 @@ or by [4](slides/week13-2x2.pdf).
     
   
 
+  
+### Scala.js IR type system
+
+Download for [screen](slides/week16.pdf),
+for printing by [2](slides/week16-1x2.pdf)
+or by [4](slides/week16-2x2.pdf).
+
+    
+    
+  
+
 
 <!--
 Note: The headings below are separate, because the corresponding PDFs aren't

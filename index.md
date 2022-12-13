@@ -55,7 +55,7 @@ The schedule below is, to a small extent, still provisional.
 | Wed, 07 Dec | Exercise session on Project 4 and 5 |
 | Tue, 13 Dec | Lecture on *Featherweight Java* |
 | Wed, 14 Dec | Pen-and-paper exercise session #4 |
-| Tue, 20 Dec | Lecture on *Foundations of Scala* |
+| Tue, 20 Dec | Lecture on *Elements of Scala.js IR* |
 | Wed, 21 Dec | Exercise session on Project 5 |
 
 
