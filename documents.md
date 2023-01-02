@@ -210,14 +210,12 @@ Download [solutions](slides/penpaper-exercises-2022-3-sol.pdf).
 ### Pen & Paper #4
 
 Download [exercises](slides/penpaper-final2022-1.pdf).
-
-<!--
-Download [solutions](slides/penpaper-final-1-sol.pdf).
--->
+Download [solutions](slides/penpaper-final2022-1-sol.pdf).
 
 ### Pen & Paper #5
 
 Download [exercises](slides/penpaper-final2022-2.pdf).
+Download [solutions](slides/penpaper-final2022-2-sol.pdf).
 
 ## Homework
 
